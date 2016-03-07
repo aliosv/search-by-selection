@@ -2,7 +2,6 @@
 !.enb/make.js
 !.githooks/**/*
 !common.blocks/**/*
-!desktop.bundles/background/background.bemdecl.js
 !desktop.bundles/content/content.bemdecl.js
 !desktop.bundles/options/options.bemjson.js
 !desktop.bundles/plugin/*.json

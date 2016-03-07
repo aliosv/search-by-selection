@@ -17,12 +17,9 @@ var levels = require('enb-bem-techs/techs/levels'),
     pathSep = process.platform === 'win32'? '\\' : '/';
 
 module.exports = function(config) {
-    config.nodes([
-        'desktop.bundles' + pathSep + 'background',
-        'desktop.bundles' + pathSep + 'content'
-    ], function(nodeConfig) {
+    config.node('desktop.bundles' + pathSep + 'content', function(nodeConfig) {
         configureFiles(nodeConfig, 'bemdecl');
-        configureJs(nodeConfig, { ym : nodeConfig._baseName !== 'background' });
+        configureJs(nodeConfig, { ym : true });
     });
 
     config.node('desktop.bundles' + pathSep + 'options', function(nodeConfig) {
@@ -35,7 +32,6 @@ module.exports = function(config) {
 
     config.node('desktop.bundles' + pathSep + 'plugin', function(nodeConfig) {
         var targets = [
-            'background.js',
             'content.js',
             'options.html',
             'options.js',

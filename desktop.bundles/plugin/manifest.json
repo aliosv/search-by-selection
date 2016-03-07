@@ -7,10 +7,10 @@
     "storage",
     "tabs"
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
   "options_page": "options.html",
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' https://yastatic.net; object-src 'self'"
