@@ -1,0 +1,40 @@
+block('binding')(
+    js()(true),
+    content()(function() {
+        var ctx = this.ctx;
+
+        return [
+            {
+                elem : 'status',
+                checked : !(ctx.mods && ctx.mods.disabled),
+                ico : ctx.ico
+            },
+            {
+                block : 'input',
+                mods : { 'has-clear' : true, size : 'm', theme : 'islands' },
+                mix : { block : 'binding', elem : 'url' },
+                val : ctx.url,
+                placeholder : 'https://yandex.ru/search/?text=%s'
+            },
+            {
+                block : 'input',
+                mods : { size : 'm', theme : 'islands' },
+                mix : { block : 'binding', elem : 'combo' },
+                val : ctx['combo-string'],
+                placeholder : 'Alt + S + W'
+            },
+            {
+                elem : 'combo-val',
+                tag : 'input',
+                attrs : { type : 'hidden', value : ctx.combo }
+            },
+            {
+                block : 'button',
+                mods : { size : 'm', theme : 'islands' },
+                mix : { block : 'binding', elem : 'delete' },
+                text : '&ndash;',
+                title : 'Delete'
+            }
+        ];
+    })
+);

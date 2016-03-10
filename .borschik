@@ -1,0 +1,8 @@
+{
+    "paths" : {
+        "./desktop.bundles/options/": "/"
+    },
+    "freeze_paths" : {
+        "**/*.svg": ":base64:"
+    }
+}

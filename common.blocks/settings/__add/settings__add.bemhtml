@@ -1,0 +1,8 @@
+block('settings').elem('add').content()(function() {
+    return applyCtx({
+        block : 'button',
+        mods : { size : 'm', theme : 'islands', view : 'action' },
+        mix : { block : 'settings', elem : 'add' },
+        text : 'Add'
+    });
+});

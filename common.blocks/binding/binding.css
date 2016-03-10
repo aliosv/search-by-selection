@@ -1,0 +1,19 @@
+.binding > *
+{
+    margin: 0 2px 0 0 !important;
+}
+
+.binding .icon
+{
+    background-size: 16px 16px;
+}
+
+.binding .input
+{
+    width: 300px;
+}
+
+.binding_disabled .icon
+{
+    opacity: 0.5;
+}

@@ -1,0 +1,45 @@
+.autocomplete__message
+{
+    display: none;
+
+    padding: 10px;
+}
+
+.autocomplete__message_state_pending,
+.autocomplete__message_state_empty,
+.autocomplete__message_state_error
+{
+    display: block;
+}
+
+.autocomplete__message_state_empty
+{
+    color: #ddd;
+}
+
+.autocomplete__message_state_error
+{
+    color: red;
+}
+
+.autocomplete__message_state_pending + .menu,
+.autocomplete__message_state_empty + .menu,
+.autocomplete__message_state_error + .menu
+{
+    display: none;
+}
+
+.autocomplete .menu
+{
+    max-height: 300px;
+}
+
+.autocomplete .menu-item_hidden
+{
+    display: none;
+}
+
+.autocomplete .menu-item b
+{
+    color: red;
+}

@@ -1,0 +1,19 @@
+block('binding').elem('status').def()(function() {
+    var ctx = this.ctx;
+
+    return applyCtx({
+        block : 'button',
+        mods : {
+            checked : ctx.checked,
+            size : 'm',
+            theme : 'islands',
+            togglable : 'check'
+        },
+        mix : { block : 'binding', elem : 'status' },
+        text : ctx.checked ? 'Enabled' : 'Disabled',
+        icon : {
+            block : 'icon',
+            url : ctx.ico
+        }
+    });
+});

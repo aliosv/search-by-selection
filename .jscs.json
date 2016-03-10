@@ -1,0 +1,31 @@
+{
+    "fileExtensions" : [".js", ".bemhtml"],
+    "excludeFiles" : [
+        ".enb/tmp/**",
+        "*.bundles/**",
+        "libs/**",
+        "node_modules/**"
+    ],
+    "requireSpaceAfterKeywords": ["do", "else"],
+    "disallowSpaceAfterKeywords": ["if", "for", "while", "switch"],
+    "disallowSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "disallowSpacesInsideArrayBrackets": true,
+    "requireSpacesInsideObjectBrackets": "all",
+    "requireSpaceAfterObjectKeys": true,
+    "requireSpaceBeforeObjectValues": true,
+    "disallowSpaceAfterPrefixUnaryOperators": ["++", "--", "+", "-", "~", "!"],
+    "disallowSpaceBeforePostfixUnaryOperators": ["++", "--"],
+    "disallowSpaceBeforeBinaryOperators": [","],
+    "requireSpaceBeforeBinaryOperators": ["+", "-", "/", "*", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<=", "&&", "||"],
+    "requireSpaceAfterBinaryOperators": [",", "+", "-", "/", "*", "=", "==", "===", "!=", "!==", ">", ">=", "<", "<=", "&&", "||"],
+    "disallowKeywords": ["with"],
+    "disallowKeywordsOnNewLine": ["else"],
+    "requireLineFeedAtFileEnd": true,
+    "validateJSDoc": {
+        "checkParamNames": true,
+        "checkRedundantParams": true,
+        "requireParamTypes": true
+    }
+}

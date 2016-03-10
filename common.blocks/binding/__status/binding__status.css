@@ -1,0 +1,9 @@
+.binding__status
+{
+    width: 100px;
+}
+
+.binding__status .icon
+{
+    background-image: url(binding__status-default-ico.svg);
+}

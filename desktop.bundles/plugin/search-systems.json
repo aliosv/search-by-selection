@@ -1,0 +1,22 @@
+{
+  "Bing": "http://www.bing.com/search?q=%s",
+  "DuckDuckGo": "https://duckduckgo.com/?q=%s",
+  "Google": "https://www.google.com/#q=%s",
+  "Google Images": "https://www.google.com/search?tbm=isch&q=%s",
+  "Google Translator": "https://translate.google.com/#ru/en/%s",
+  "Habrahabr": "https://habrahabr.ru/search/?q=%s",
+  "Kinopoisk": "http://www.kinopoisk.ru/index.php?kp_query=%s",
+  "Mozilla Developer Network": "https://developer.mozilla.org/en/search?q=%s",
+  "Pikabu" : "http://pikabu.ru/search.php?q=%s",
+  "RuTracker": "http://rutracker.org/forum/tracker.php?nm=%s",
+  "Twitter": "https://twitter.com/search?q=%s",
+  "Wikipedia": "https://ru.wikipedia.org/w/index.php?search=%s",
+  "Yahoo": "https://search.yahoo.com/search?p=%s",
+  "Yandex": "https://yandex.ua/search/?text=%s",
+  "Yandex Images": "https://yandex.ua/images/search?text=%s",
+  "Yandex Music": "https://music.yandex.ua/search?text=%s",
+  "Yandex Slovari": "https://slovari.yandex.ru/%s/перевод/",
+  "Yandex Translator": "https://translate.yandex.ua/?text=%s",
+  "Yandex Video": "http://yandex.ua/video/search?text=%s",
+  "YouTube": "https://www.youtube.com/results?search_query=$s"
+}

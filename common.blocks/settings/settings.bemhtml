@@ -1,0 +1,9 @@
+block('settings')(
+    js()(true),
+    content()(function() {
+        return [
+            { elem : 'add' },
+            { elem : 'items' }
+        ];
+    })
+);

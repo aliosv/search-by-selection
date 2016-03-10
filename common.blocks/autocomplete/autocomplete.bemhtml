@@ -1,0 +1,25 @@
+block('autocomplete').def()(function() {
+    return applyCtx({
+        block : 'popup',
+        mix : { block : 'autocomplete', js : this.ctx.js || true },
+        mods : { target : 'anchor', theme : 'islands' },
+        directions : this.ctx.directions,
+        content : [
+            {
+                block : 'autocomplete',
+                elem : 'message',
+                content : [
+                    {
+                        block : 'spin',
+                        mods : { size : 's', theme : 'islands' }
+                    },
+                    { elem : 'message-text' }
+                ]
+            },
+            {
+                block : 'menu',
+                mods : { size : 'xl', theme : 'islands' }
+            }
+        ]
+    });
+});

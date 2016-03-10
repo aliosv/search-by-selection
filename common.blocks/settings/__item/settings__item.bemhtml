@@ -1,0 +1,13 @@
+block('settings').elem('item').def()(function() {
+    var ctx = this.ctx;
+
+    return applyCtx({
+        block : 'binding',
+        mods : { disabled : ctx.elemMods && ctx.elemMods.disabled },
+        mix : { block : 'settings', elem : 'item' },
+        combo : ctx.combo,
+        'combo-string' : ctx['combo-string'],
+        ico : ctx.ico,
+        url : ctx.url
+    });
+});
