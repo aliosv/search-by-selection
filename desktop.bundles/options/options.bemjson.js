@@ -1,7 +1,7 @@
 ({
     block : 'page',
     js : true,
-    title : 'Desktop blocks',
+    title : 'Search by selection plugin settings',
     head : [{ elem : 'css', url : 'options.css' }],
     scripts : [{ elem : 'js', url : 'options.js' }],
     mods : { theme : 'islands' },
